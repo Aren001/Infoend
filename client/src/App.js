@@ -34,6 +34,8 @@ import Contact from './Contact/contact';
 
 import Details from './News/detalis/detalis';
 
+import Notfond from './404';
+
 
 
 const App = (props) => {
@@ -57,6 +59,7 @@ const App = (props) => {
                 <Route path = "/news" component = {News} />
                 <Route path='/maynews/:id'  exact  component={Details} />
                 <Route path = "/contact" component = {Contact} />
+                <Route component = {Notfond} />
             </Switch>
             <Footer/>
         </div>
